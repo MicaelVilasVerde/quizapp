@@ -11,7 +11,7 @@
     --purple: #a729f5;
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
-    --buttom-bg: #ffff;
+    --button-bg: #fff;
     --shadow: 0px 16px 40px 0px rgba(143, 160, 193,0.14);
     --bg-html: #fff1e9;
     --bg-css: #e8fdef;
@@ -23,9 +23,19 @@
 
 }
 
+body.escuro {
+    --bg-color: #313e51; 
+    --bg-mobile: url(./assets/images/pattern-background-mobile-dark.svg);
+    --bg-desktop: url(./assets/images/pattern-background-desktop-dark.svg);
+    --primary-text-color: #fff;
+    --secondary-text-color: #abc1e1;
+    --button-bg: #3b4d66; 
+    --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+}
+
 body {
     height: 100svh;
-    background: var (--bg-mobile) var(--bg-color);
+    background: var(--bg-mobile) var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -37,7 +47,6 @@ header {
 
 }
 .tema {
-
     padding: 8px 0;
     display: flex;
     align-items: center;
@@ -67,6 +76,7 @@ header {
 main {
     padding: 32px 24px;
 }
+
 .boas_vindas {
     margin-bottom: 40px;
 }
@@ -74,10 +84,9 @@ main {
 .boas_vindas h1 {
    font-size: 40px;
    font-weight: 300; 
-   color: var( --primary-text-color);
+   color: var(--primary-text-color);
    margin-bottom: 16px;
 }
-
 
 .boas_vindas h1 strong {
     font-weight: 500;
@@ -98,7 +107,7 @@ main {
 
 .assuntos button {
     border: none;
-    background: var(--buttom-bg);
+    background: var(--button-bg);
     display: flex;
     align-items: center;
     gap: 16px;
@@ -121,25 +130,26 @@ main {
     width: 100%;
 }
 
-.botão_html div {
+.botao_html div {
     background: var(--bg-html);
 }
 
-.botão_css div {
+.botao_css div {
     background: var(--bg-css);
 }
 
-.botão_javascript div {
+.botao_javascript div {
     background: var(--bg-javascript);
 }
 
-.botão_acessibilidade div {
+.botao_acessibilidade div {
     background: var(--bg-acessibilidade);
 }
 
 @media(min-width: 1100px) {
+
     body {
-        background: var(--bg-desktop)  var(--bg-color);
+        background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -172,7 +182,7 @@ main {
         margin-inline: auto;
     }
     
-    
+
     section {
         width: 100%;
     }
