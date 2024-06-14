@@ -20,7 +20,6 @@
     --white: #ffff;
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
-
 }
 
 body.escuro {
@@ -46,6 +45,7 @@ header {
     justify-content: flex-end;
 
 }
+
 .tema {
     padding: 8px 0;
     display: flex;
