@@ -67,7 +67,7 @@ header {
     width: 100%;
 }
 
-.asssunto h1 {
+.assunto h1 {
     font-size: 18px;
     font-weight: 500;
     color: var(--primary-text-color);
@@ -113,6 +113,10 @@ main h2 {
 
 main h2 strong {
     font-weight: 500;
+}
+
+.pontuacao h1 {
+    color: var(--primary-text-color);
 }
 
 .pontuacao {
