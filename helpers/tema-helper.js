@@ -18,7 +18,7 @@ export function trocarTema(body, botaoTema) {
 
 export function verificarTema (body, botaoTema) {
     if (localStorage.getItem("tema")) {
-        tema - localStorage.getItem("tema")
+        tema = localStorage.getItem("tema")
     }
 
     if (tema === "escuro") {
